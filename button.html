@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <style>
+      body {
+        padding: 0px;
+        margin: 0px;
+        font-size: 20px;
+        min-height: 100vh;
+      }
+
+      #hamburger-menu {
+        width: 50px;
+        height: 50px;
+        display: block;
+        border: none;
+        padding: 0px;
+        margin: 20px;
+        background: linear-gradient(
+          to bottom,
+          #3d0e61,
+          #3d0e61 20%,
+          white 20%,
+          white 40%,
+          #3d0e61 40%,
+          #3d0e61 60%,
+          white 60%,
+          white 80%,
+          #3d0e61 80%,
+          #3d0e61 100%
+        );
+      }
+
+      #hamburger-menu #sidebar-menu {
+        visibilty: hidden;
+        position: fixed;
+        top: 0;
+        left: -250px;
+        width: 200px;
+        height: 100%;
+        background-color: #3d0e61;
+        padding: 0px 10px;
+        box-sizing: border-box;
+        transition: 0.3s;
+      }
+      #hamburger-input:checked + #hamburger-menu #sidebar-menu {
+        visibility: visible;
+        left: 0;
+      }
+      #hamburger-input:checked ~ .overlay {
+        visibility: visible;
+        opacity: 0.4;
+      }
+    </style>
+  </head>
+  <body>
+    <!-- We add the checkbox -->
+    <input type="checkbox" id="hamburger-input" class="burger-shower" />
+
+    <!-- 
+  We use a `label` element with the `for` attribute 
+  with the same value as  our label `id` attribute 
+-->
+    <label id="hamburger-menu" for="hamburger-input">
+      <nav id="sidebar-menu">
+        <h3>Menu</h3>
+        <ul>
+          <li><a href="#">Home</a></li>
+          <li><a href="#">Store</a></li>
+          <li><a href="#">Blog</a></li>
+          <li><a href="#">About</a></li>
+          <li><a href="#">Contact</a></li>
+        </ul>
+      </nav>
+    </label>
+
+    <!-- 
+  Adding an overlay to show a dark 
+  background when the menu appears
+-->
+    <div class="overlay"></div>
+  </body>
+</html>
