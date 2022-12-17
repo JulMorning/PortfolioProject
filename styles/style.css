@@ -15,7 +15,7 @@ h1 {
 h2 {
   font-size: 64px;
 }
-h4 {
+h3 {
   font-size: 48px;
 }
 p {
@@ -67,7 +67,7 @@ p {
   font-family: var(--default-font-family);
 }
 .content-container {
-  padding: 120px 60px;
+  padding: 60px 60px;
 }
 .content {
   margin: 30px;

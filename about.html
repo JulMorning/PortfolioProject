@@ -27,9 +27,43 @@
       crossorigin="anonymous"
     ></script>
     <link rel="stylesheet" href="styles/style.css" />
-    <title>Document</title>
+     <meta
+      name="description"
+      content="Yuliia is a frontend engineer based in Ukraine. See more projects."
+    />
+    <title>More information about Yuliia Klan - Frontend developer from Ukraine</title>
   </head>
   <body>
+    <div class="container">
+      <nav class="d-flex justify-content-between">
+        <a href="index.html" title="Homepage">
+          <img
+            src="styles/images/YuliiaKlan_logo_black.svg"
+            class="logo d-none d-md-block p-2"
+            alt="Yuliia Logo"
+          />
+          <img
+            src="styles/images/YuliiaKlan_logo_black.svg"
+            class="logo d-block d-md-none"
+            alt="Yuliia Logo_short version"
+          />
+        </a>
+        <ul>
+          <li>
+            <a href="index.html" title="Homepage">Home</a>
+          </li>
+          <li class="active">
+            <a href="about.html" title="About Yuliia">About</a>
+          </li>
+          <li>
+            <a href="work.html" title="Yuliia's Work">Work</a>
+          </li>
+          <li>
+            <a href="contact.html" title="Contact Yuliia">Contact</a>
+          </li>
+        </ul>
+      </nav>
+    </div>
     <div class="content-container container">
       <div class="row">
         <div class="col-lg-6">
@@ -44,13 +78,61 @@
               finally happened. I like to code things from scratch, and enjoy
               bringing ideas to life in the browser.
             </p>
-            <a href="#" class="btn btn-branding mt-5">See my projects</a>
+            <a href="work.html" class="btn btn-branding mt-5"
+              >See my projects</a
+            >
           </div>
         </div>
         <div class="col-lg-6">
           <img src="styles/images/YK_photo.jpg" class="img-fluid" alt="" />
         </div>
       </div>
+			      <footer>
+        <div
+          class="contact-box d-flex justify-content-between mb-5 d-none d-md-flex"
+        >
+          <div>
+            <h3>Work Inquiry</h3>
+            <p class="text-muted">Let's work together</p>
+          </div>
+          <div>
+            <a
+              href="contact.html"
+              class="btn btn-branding"
+              title="Contact Yuliia"
+              >Contact me</a
+            >
+          </div>
+        </div>
+        <div class="d-flex justify-content-center mb-5">
+          <a href="mailto:yuliia@gmail.com" class="email-link" title="Email me"
+            >yuliia@gmail.com</a
+          >
+        </div>
+        <div class="social-links d-flex justify-content-center mb-5">
+          <a
+            href="https//www.github.com/yuliia"
+            target="_blank"
+            title="GitHub Profile"
+          >
+            <i class="fa-brands fa-github"></i
+          ></a>
+          <a href="https//www.instagram.com/yuliia" title="Instagram Profile"
+            ><i class="fa-brands fa-instagram" target="_blank"></i
+          ></a>
+          <a href="https//www.facebook.com/yuliia" title="Facebook Profile">
+            <i class="fa-brands fa-facebook" target="_blank"></i
+          ></a>
+        </div>
+        <p class="text-center mt-5">
+          This project was coded by Yuliia Klan, and it is
+          <a
+            href="https://github.com/JulMorning/PortfolioProject"
+            target="_blank"
+            >open-sourced</a
+          >
+        </p>
+      </footer>
     </div>
   </body>
 </html>
